@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/3976/trunk/fusionpbx/includes/install/scripts/app/xml_handler/resources/scripts/configuration
+END
+conference.conf.lua
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/!svn/ver/3976/trunk/fusionpbx/includes/install/scripts/app/xml_handler/resources/scripts/configuration/conference.conf.lua
+END
+sofia.conf.lua
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/3976/trunk/fusionpbx/includes/install/scripts/app/xml_handler/resources/scripts/configuration/sofia.conf.lua
+END

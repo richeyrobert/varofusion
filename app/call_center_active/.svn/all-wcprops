@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/4011/trunk/fusionpbx/app/call_center_active
+END
+call_center_active_inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/3695/trunk/fusionpbx/app/call_center_active/call_center_active_inc.php
+END
+call_center_exec.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/3695/trunk/fusionpbx/app/call_center_active/call_center_exec.php
+END
+call_center_queue.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/3695/trunk/fusionpbx/app/call_center_active/call_center_queue.php
+END
+root.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/2225/trunk/fusionpbx/app/call_center_active/root.php
+END
+app_config.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/4011/trunk/fusionpbx/app/call_center_active/app_config.php
+END
+call_center_active.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/3695/trunk/fusionpbx/app/call_center_active/call_center_active.php
+END

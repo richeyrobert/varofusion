@@ -1,0 +1,197 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/4007/trunk/fusionpbx/app/dialplan/resources/xml/dialplan
+END
+250_global.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/2758/trunk/fusionpbx/app/dialplan/resources/xml/dialplan/250_global.xml
+END
+430_directory.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/3695/trunk/fusionpbx/app/dialplan/resources/xml/dialplan/430_directory.xml
+END
+485_operator-forward.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/2760/trunk/fusionpbx/app/dialplan/resources/xml/dialplan/485_operator-forward.xml
+END
+999_local_extension.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/4007/trunk/fusionpbx/app/dialplan/resources/xml/dialplan/999_local_extension.xml
+END
+270_call_privacy.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/3976/trunk/fusionpbx/app/dialplan/resources/xml/dialplan/270_call_privacy.xml
+END
+280_call_return.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/2758/trunk/fusionpbx/app/dialplan/resources/xml/dialplan/280_call_return.xml
+END
+350_echo.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/2758/trunk/fusionpbx/app/dialplan/resources/xml/dialplan/350_echo.xml
+END
+245_page.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/2758/trunk/fusionpbx/app/dialplan/resources/xml/dialplan/245_page.xml
+END
+370_tone_stream.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/3976/trunk/fusionpbx/app/dialplan/resources/xml/dialplan/370_tone_stream.xml
+END
+460_park_slots.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/3695/trunk/fusionpbx/app/dialplan/resources/xml/dialplan/460_park_slots.xml
+END
+230_group-intercept.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/2758/trunk/fusionpbx/app/dialplan/resources/xml/dialplan/230_group-intercept.xml
+END
+220_global-intercept.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/3695/trunk/fusionpbx/app/dialplan/resources/xml/dialplan/220_global-intercept.xml
+END
+410_freeswitch_conference.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/2758/trunk/fusionpbx/app/dialplan/resources/xml/dialplan/410_freeswitch_conference.xml
+END
+380_hold_music.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/2758/trunk/fusionpbx/app/dialplan/resources/xml/dialplan/380_hold_music.xml
+END
+340_delay_echo.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/2758/trunk/fusionpbx/app/dialplan/resources/xml/dialplan/340_delay_echo.xml
+END
+470_valet_park.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/3976/trunk/fusionpbx/app/dialplan/resources/xml/dialplan/470_valet_park.xml
+END
+290_intercept-ext.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/3695/trunk/fusionpbx/app/dialplan/resources/xml/dialplan/290_intercept-ext.xml
+END
+480_operator.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/2760/trunk/fusionpbx/app/dialplan/resources/xml/dialplan/480_operator.xml
+END
+330_vmain_user.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/3695/trunk/fusionpbx/app/dialplan/resources/xml/dialplan/330_vmain_user.xml
+END
+360_milliwatt.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/3976/trunk/fusionpbx/app/dialplan/resources/xml/dialplan/360_milliwatt.xml
+END
+320_vmain.xml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/3695/trunk/fusionpbx/app/dialplan/resources/xml/dialplan/320_vmain.xml
+END
+440_wake-up.xml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/2758/trunk/fusionpbx/app/dialplan/resources/xml/dialplan/440_wake-up.xml
+END
+420_disa.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/3976/trunk/fusionpbx/app/dialplan/resources/xml/dialplan/420_disa.xml
+END
+310_send_to_voicemail.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/3695/trunk/fusionpbx/app/dialplan/resources/xml/dialplan/310_send_to_voicemail.xml
+END
+490_do-not-disturb.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/2760/trunk/fusionpbx/app/dialplan/resources/xml/dialplan/490_do-not-disturb.xml
+END
+100_call-direction.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/3695/trunk/fusionpbx/app/dialplan/resources/xml/dialplan/100_call-direction.xml
+END
+450_park_in.xml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/3695/trunk/fusionpbx/app/dialplan/resources/xml/dialplan/450_park_in.xml
+END
+300_extension-intercom.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/2758/trunk/fusionpbx/app/dialplan/resources/xml/dialplan/300_extension-intercom.xml
+END
+260_eavesdrop.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/3695/trunk/fusionpbx/app/dialplan/resources/xml/dialplan/260_eavesdrop.xml
+END
+455_park_out.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/3695/trunk/fusionpbx/app/dialplan/resources/xml/dialplan/455_park_out.xml
+END
+400_recordings.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/2758/trunk/fusionpbx/app/dialplan/resources/xml/dialplan/400_recordings.xml
+END
+240_redial.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/2758/trunk/fusionpbx/app/dialplan/resources/xml/dialplan/240_redial.xml
+END

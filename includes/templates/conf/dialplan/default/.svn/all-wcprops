@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/dialplan/default
+END
+01_example.com.xml.noload
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/dialplan/default/01_example.com.xml.noload
+END
+00_pizza_demo.xml.noload
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/dialplan/default/00_pizza_demo.xml.noload
+END
+00_ladspa.xml.noload
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/dialplan/default/00_ladspa.xml.noload
+END
+01_Talking_Clock.xml.noload
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/dialplan/default/01_Talking_Clock.xml.noload
+END

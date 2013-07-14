@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/directory/default
+END
+skinny-example.xml.noload
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/directory/default/skinny-example.xml.noload
+END
+default.xml.noload
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/directory/default/default.xml.noload
+END
+example.com.xml.noload
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/directory/default/example.com.xml.noload
+END
+brian.xml.noload
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/directory/default/brian.xml.noload
+END

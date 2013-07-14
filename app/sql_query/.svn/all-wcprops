@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/4153/trunk/fusionpbx/app/sql_query
+END
+sql_query_db.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/3695/trunk/fusionpbx/app/sql_query/sql_query_db.php
+END
+sql_db_conversion.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/3695/trunk/fusionpbx/app/sql_query/sql_db_conversion.php
+END
+sql_query_result.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/3695/trunk/fusionpbx/app/sql_query/sql_query_result.php
+END
+root.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/2225/trunk/fusionpbx/app/sql_query/root.php
+END
+sql_backup.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/4153/trunk/fusionpbx/app/sql_query/sql_backup.php
+END
+sql_query.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/4151/trunk/fusionpbx/app/sql_query/sql_query.php
+END
+app_config.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/3695/trunk/fusionpbx/app/sql_query/app_config.php
+END
+sql_query_pdo.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/3695/trunk/fusionpbx/app/sql_query/sql_query_pdo.php
+END

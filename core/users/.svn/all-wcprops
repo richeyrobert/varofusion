@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/3977/trunk/fusionpbx/core/users
+END
+userdelete.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/3215/trunk/fusionpbx/core/users/userdelete.php
+END
+usersupdate.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/3059/trunk/fusionpbx/core/users/usersupdate.php
+END
+app_config.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/3976/trunk/fusionpbx/core/users/app_config.php
+END
+groupadd.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/3976/trunk/fusionpbx/core/users/groupadd.php
+END
+signup.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/3695/trunk/fusionpbx/core/users/signup.php
+END
+groupmemberdelete.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/2506/trunk/fusionpbx/core/users/groupmemberdelete.php
+END
+groupmembers.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/3976/trunk/fusionpbx/core/users/groupmembers.php
+END
+index.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/2043/trunk/fusionpbx/core/users/index.php
+END
+app_defaults.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/2758/trunk/fusionpbx/core/users/app_defaults.php
+END
+userlist.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/2758/trunk/fusionpbx/core/users/userlist.php
+END
+permissions_default.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/3976/trunk/fusionpbx/core/users/permissions_default.php
+END
+groups.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/3976/trunk/fusionpbx/core/users/groups.php
+END
+groupdelete.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/3976/trunk/fusionpbx/core/users/groupdelete.php
+END
+root.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/2225/trunk/fusionpbx/core/users/root.php
+END
+group_permissions.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/3976/trunk/fusionpbx/core/users/group_permissions.php
+END
+groupmemberadd.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/2506/trunk/fusionpbx/core/users/groupmemberadd.php
+END

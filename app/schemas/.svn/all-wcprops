@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/4163/trunk/fusionpbx/app/schemas
+END
+schema_field_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/3976/trunk/fusionpbx/app/schemas/schema_field_edit.php
+END
+schema_data_delete.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/3976/trunk/fusionpbx/app/schemas/schema_data_delete.php
+END
+schema_name_value_delete.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/3976/trunk/fusionpbx/app/schemas/schema_name_value_delete.php
+END
+schema_name_values.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/3976/trunk/fusionpbx/app/schemas/schema_name_values.php
+END
+schema_delete.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/3976/trunk/fusionpbx/app/schemas/schema_delete.php
+END
+schema_data_view.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/3976/trunk/fusionpbx/app/schemas/schema_data_view.php
+END
+root.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/3976/trunk/fusionpbx/app/schemas/root.php
+END
+schemas.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/3976/trunk/fusionpbx/app/schemas/schemas.php
+END
+schema_field_delete.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/3976/trunk/fusionpbx/app/schemas/schema_field_delete.php
+END
+schema_fields.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/3976/trunk/fusionpbx/app/schemas/schema_fields.php
+END
+schema_import.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/3976/trunk/fusionpbx/app/schemas/schema_import.php
+END
+schema_data_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/4163/trunk/fusionpbx/app/schemas/schema_data_edit.php
+END
+schema_name_value_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/3976/trunk/fusionpbx/app/schemas/schema_name_value_edit.php
+END
+app_config.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/3976/trunk/fusionpbx/app/schemas/app_config.php
+END
+schema_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/3976/trunk/fusionpbx/app/schemas/schema_edit.php
+END

@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/4096/trunk/fusionpbx/app/voicemails
+END
+voicemail_delete.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/3695/trunk/fusionpbx/app/voicemails/voicemail_delete.php
+END
+voicemails.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/3720/trunk/fusionpbx/app/voicemails/voicemails.php
+END
+voicemail_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/4096/trunk/fusionpbx/app/voicemails/voicemail_edit.php
+END
+voicemail_message_delete.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/3695/trunk/fusionpbx/app/voicemails/voicemail_message_delete.php
+END
+voicemail_messages.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/3695/trunk/fusionpbx/app/voicemails/voicemail_messages.php
+END
+voicemail_message_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/3695/trunk/fusionpbx/app/voicemails/voicemail_message_edit.php
+END
+voicemail_message_play.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/3976/trunk/fusionpbx/app/voicemails/voicemail_message_play.php
+END
+root.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/3695/trunk/fusionpbx/app/voicemails/root.php
+END
+app_config.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/3695/trunk/fusionpbx/app/voicemails/app_config.php
+END
+app_languages.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/3695/trunk/fusionpbx/app/voicemails/app_languages.php
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/3976/trunk/fusionpbx/app/calls/resources/classes
+END
+switch_do_not_disturb.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/3695/trunk/fusionpbx/app/calls/resources/classes/switch_do_not_disturb.php
+END
+switch_call_forward.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/3976/trunk/fusionpbx/app/calls/resources/classes/switch_call_forward.php
+END
+switch_follow_me.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/3976/trunk/fusionpbx/app/calls/resources/classes/switch_follow_me.php
+END

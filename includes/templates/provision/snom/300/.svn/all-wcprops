@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/3695/trunk/fusionpbx/includes/templates/provision/snom/300
+END
+{v_mac}.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/3695/trunk/fusionpbx/includes/templates/provision/snom/300/%7Bv_mac%7D.xml
+END

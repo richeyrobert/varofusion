@@ -1,0 +1,1003 @@
+<?php
+/*
+	FusionPBX
+	Version: MPL 1.1
+
+	The contents of this file are subject to the Mozilla Public License Version
+	1.1 (the "License"); you may not use this file except in compliance with
+	the License. You may obtain a copy of the License at
+	http://www.mozilla.org/MPL/
+
+	Software distributed under the License is distributed on an "AS IS" basis,
+	WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+	for the specific language governing rights and limitations under the
+	License.
+
+	The Original Code is FusionPBX
+
+	The Initial Developer of the Original Code is
+	Mark J Crane <markjcrane@fusionpbx.com>
+	Portions created by the Initial Developer are Copyright (C) 2008-2012
+	the Initial Developer. All Rights Reserved.
+
+	Contributor(s):
+	Mark J Crane <markjcrane@fusionpbx.com>
+	James Rose <james.o.rose@gmail.com>
+*/
+include "root.php";
+require_once "includes/require.php";
+require_once "includes/checkauth.php";
+if (permission_exists('outbound_route_add')) {
+	//access granted
+}
+else {
+	echo "access denied";
+	exit;
+}
+
+//add multi-lingual support
+	require_once "app_languages.php";
+	foreach($text as $key => $value) {
+		$text[$key] = $value[$_SESSION['domain']['language']['code']];
+	}
+
+//show the header
+	require_once "includes/header.php";
+	require_once "includes/paging.php";
+
+//get the http post values and set theme as php variables
+	if (count($_POST)>0) {
+		$dialplan_name = check_str($_POST["dialplan_name"]);
+		$dialplan_order = check_str($_POST["dialplan_order"]);
+		$dialplan_expression = check_str($_POST["dialplan_expression"]);
+		$prefix_number = check_str($_POST["prefix_number"]);
+		$condition_field_1 = check_str($_POST["condition_field_1"]);
+		$condition_expression_1 = check_str($_POST["condition_expression_1"]);
+		$condition_field_2 = check_str($_POST["condition_field_2"]);
+		$condition_expression_2 = check_str($_POST["condition_expression_2"]);
+		$gateway = check_str($_POST["gateway"]);
+		$limit = check_str($_POST["limit"]);
+
+		//set the default type
+			$gateway_type = 'gateway';
+			$gateway_2_type = 'gateway';
+			$gateway_3_type = 'gateway';
+
+		//set the gateway type to enum
+			if (strtolower(substr($gateway, 0, 7)) == "enum") {
+				$gateway_type = 'enum';
+			}
+		//set the gateway type to freetdm
+			if (strtolower(substr($gateway, 0, 7)) == "freetdm") {
+				$gateway_type = 'freetdm';
+			}
+		//set the gateway type to dingaling
+			if (strtolower(substr($gateway, 0, 4)) == "xmpp") {
+				$gateway_type = 'xmpp';
+			}
+		//set the gateway_uuid and gateway_name
+			if ($gateway_type == "gateway") {
+				$gateway_array = explode(":",$gateway);
+				$gateway_uuid = $gateway_array[0];
+				$gateway_name = $gateway_array[1];
+			}
+			else {
+				$gateway_name = '';
+				$gateway_uuid = '';
+			}
+
+		//set the gateway_2 variable
+			$gateway_2 = check_str($_POST["gateway_2"]);
+		//set the gateway type to enum
+			if (strtolower(substr($gateway_2, 0, 4)) == "enum") {
+				$gateway_2_type = 'enum';
+			}
+		//set the gateway type to freetdm
+			if (strtolower(substr($gateway_2, 0, 7)) == "freetdm") {
+				$gateway_2_type = 'freetdm';
+			}
+		//set the gateway type to dingaling
+			if (strtolower(substr($gateway_2, 0, 4)) == "xmpp") {
+				$gateway_2_type = 'xmpp';
+			}
+		//set the gateway_2_id and gateway_2_name
+			if ($gateway_2_type == "gateway" && strlen($_POST["gateway_2"]) > 0) {
+				$gateway_2_array = explode(":",$gateway_2);
+				$gateway_2_id = $gateway_2_array[0];
+				$gateway_2_name = $gateway_2_array[1];
+			}
+			else {
+				$gateway_2_id = '';
+				$gateway_2_name = '';
+			}
+
+		//set the gateway_3 variable
+			$gateway_3 = check_str($_POST["gateway_3"]);
+		//set the gateway type to enum
+			if (strtolower(substr($gateway_3, 0, 4)) == "enum") {
+				$gateway_3_type = 'enum';
+			}
+		//set the gateway type to freetdm
+			if (strtolower(substr($gateway_3, 0, 7)) == "freetdm") {
+				$gateway_3_type = 'freetdm';
+			}
+		//set the gateway type to dingaling
+			if (strtolower(substr($gateway_3, 0, 4)) == "xmpp") {
+				$gateway_3_type = 'xmpp';
+			}
+		//set the gateway_3_id and gateway_3_name
+			if ($gateway_3_type == "gateway" && strlen($_POST["gateway_3"]) > 0) {
+				$gateway_3_array = explode(":",$gateway_3);
+				$gateway_3_id = $gateway_3_array[0];
+				$gateway_3_name = $gateway_3_array[1];
+			}
+			else {
+				$gateway_3_id = '';
+				$gateway_3_name = '';
+			}
+
+		if (permission_exists('outbound_route_any_gateway')) {
+			//get the domain_uuid for gateway
+				$sql = "select * from v_gateways ";
+				$sql .= "where gateway_uuid = '$gateway_uuid' ";
+				$sql .= "and gateway = '$gateway_name' ";
+				$sql .= "and enabled = 'true' ";
+				$prep_statement = $db->prepare(check_sql($sql));
+				$prep_statement->execute();
+				$result = $prep_statement->fetchAll(PDO::FETCH_NAMED);
+				foreach ($result as &$row) {
+					$gateway_domain_uuid = $row["domain_uuid"];
+					break;
+				}
+				unset ($prep_statement);
+			//get the domain_uuid for gateway_2
+				$sql = "select * from v_gateways ";
+				$sql .= "where gateway_uuid = '$gateway_2_id' ";
+				$sql .= "and gateway = '$gateway_2_name' ";
+				$sql .= "and enabled = 'true' ";
+				$prep_statement = $db->prepare(check_sql($sql));
+				$prep_statement->execute();
+				$result = $prep_statement->fetchAll(PDO::FETCH_NAMED);
+				foreach ($result as &$row) {
+					$gateway_2_domain_uuid = $row["domain_uuid"];
+					break;
+				}
+				unset ($prep_statement);
+			//get the domain_uuid for gateway_3
+				$sql = "select * from v_gateways ";
+				$sql .= "where gateway_uuid = '$gateway_3_id' ";
+				$sql .= "and gateway = '$gateway_3_name' ";
+				$sql .= "and enabled = 'true' ";
+				$prep_statement = $db->prepare(check_sql($sql));
+				$prep_statement->execute();
+				$result = $prep_statement->fetchAll(PDO::FETCH_NAMED);
+				foreach ($result as &$row) {
+					$gateway_3_domain_uuid = $row["domain_uuid"];
+					break;
+				}
+				unset ($prep_statement);
+		}
+
+		$dialplan_enabled = check_str($_POST["dialplan_enabled"]);
+		$dialplan_description = check_str($_POST["dialplan_description"]);
+		if (strlen($dialplan_enabled) == 0) { $dialplan_enabled = "true"; } //set default to enabled
+	}
+
+//process the http form values
+	if (count($_POST)>0 && strlen($_POST["persistformvar"]) == 0) {
+		//check for all required data
+			if (strlen($gateway) == 0) { $msg .= $text['message-provide'].": ".$text['label-gateway-name']."<br>\n"; }
+			//if (strlen($gateway_2) == 0) { $msg .= "Please provide: Alternat 1<br>\n"; }
+			//if (strlen($gateway_3) == 0) { $msg .= "Please provide: Alternat 2<br>\n"; }
+			if (strlen($dialplan_expression) == 0) { $msg .= $text['message-provide'].": ".$text['label-dialplan-expression']."<br>\n"; }
+			//if (strlen($dialplan_name) == 0) { $msg .= "Please provide: Extension Name<br>\n"; }
+			//if (strlen($condition_field_1) == 0) { $msg .= "Please provide: Condition Field<br>\n"; }
+			//if (strlen($condition_expression_1) == 0) { $msg .= "Please provide: Condition Expression<br>\n"; }
+			//if (strlen($limit) == 0) { $msg .= "Please provide: Limit<br>\n"; }
+			//if (strlen($dialplan_enabled) == 0) { $msg .= "Please provide: Enabled True or False<br>\n"; }
+			//if (strlen($description) == 0) { $msg .= "Please provide: Description<br>\n"; }
+			if (strlen($msg) > 0 && strlen($_POST["persistformvar"]) == 0) {
+				require_once "includes/header.php";
+				require_once "includes/persistformvar.php";
+				echo "<div align='center'>\n";
+				echo "<table><tr><td>\n";
+				echo $msg."<br />";
+				echo "</td></tr></table>\n";
+				persistformvar($_POST);
+				echo "</div>\n";
+				require_once "includes/footer.php";
+				return;
+			}
+
+		if (strlen(trim($_POST['dialplan_expression']))> 0) {
+
+			$tmp_array = explode("\n", $_POST['dialplan_expression']);
+
+			foreach($tmp_array as $dialplan_expression) {
+				$dialplan_expression = trim($dialplan_expression);
+				if (strlen($dialplan_expression)>0) {
+					if (count($_SESSION["domains"]) > 1) {
+						if (permission_exists('outbound_route_any_gateway')) {
+							$tmp_gateway_name = $_SESSION['domains'][$gateway_domain_uuid]['domain_name'] .'-'.$gateway_name;
+						}
+						else {
+							$tmp_gateway_name = $_SESSION['domains'][$_SESSION['domain_uuid']]['domain_name'] .'-'.$gateway_name;
+						}
+						if (strlen($gateway_2_name) > 0) {
+							if (permission_exists('outbound_route_any_gateway')) {
+								$tmp_gateway_2_name = $_SESSION['domains'][$gateway_2_domain_uuid]['domain_name'] .'-'.$gateway_2_name;
+							}
+							else {
+								$tmp_gateway_2_name = $_SESSION['domains'][$_SESSION['domain_uuid']]['domain_name'] .'-'.$gateway_2_name;
+							}
+						}
+						if (strlen($gateway_3_name) > 0) {
+							if (permission_exists('outbound_route_any_gateway')) {
+								$tmp_gateway_3_name = $_SESSION['domains'][$gateway_3_domain_uuid]['domain_name'] .'-'.$gateway_3_name;
+							}
+							else {
+								$tmp_gateway_3_name = $_SESSION['domains'][$_SESSION['domain_uuid']]['domain_name'] .'-'.$gateway_3_name;
+							}
+						}
+					}
+					else {
+						$tmp_gateway_name = $gateway_name;
+						if (strlen($gateway_2_name) > 0) {
+							$tmp_gateway_2_name = $gateway_2_name;
+						}
+						if (strlen($gateway_3_name) > 0) {
+							$tmp_gateway_3_name = $gateway_3_name;
+						}
+					}
+					switch ($dialplan_expression) {
+					case "^(\d{7})$":
+						$label = $text['label-7d'];
+						$abbrv = "7d";
+						break;
+					case "^(\d{8})$":
+						$label = $text['label-8d'];
+						$abbrv = "8d";
+						break;
+					case "^(\d{9})$":
+						$label = $text['label-9d'];
+						$abbrv = "9d";
+						break;
+					case "^(\d{10})$":
+						$label = $text['label-10d'];
+						$abbrv = "10d";
+						break;
+					case "^\+?(\d{11})$":
+						$label = $text['label-11d'];
+						$abbrv = "11d";
+						break;
+					case "^(\d{12})$":
+						$label = $text['label-12d'];
+						$abbrv = "12d";
+						break;
+					case "^(\d{13})$":
+						$label = $text['label-13d'];
+						$abbrv = "13d";
+						break;
+					case "^(\d{14})$":
+						$label = $text['label-14d'];
+						$abbrv = "14d";
+						break;
+					case "^(\d{12,15})$":
+						$label = $text['label-int'];
+						$abbrv = "Intl";
+						break;
+					case "^(311)$":
+						$label = $text['label-311'];
+						$abbrv = "311";
+						break;
+					case "^(411)$":
+						$label = $text['label-411'];
+						$abbrv = "411";
+						break;
+					case "^(911)$":
+						$label = $text['label-911'];
+						$abbrv = "911";
+						break;
+					case "^9(\d{3})$":
+						$label = $text['label-9d3'];
+						$abbrv = "9.3d";
+						break;
+					case "^9(\d{4})$":
+						$label = $text['label-9d4'];
+						$abbrv = "9.4d";
+						break;	
+					case "^9(\d{7})$":
+						$label = $text['label-9d7'];
+						$abbrv = "9.7d";
+						break;
+					case "^9(\d{10})$":
+						$label = $text['label-9d10'];
+						$abbrv = "9.10d";
+						break;
+					case "^9(\d{11})$":
+						$label = $text['label-9d11'];
+						$abbrv = "9.11d";
+						break;
+					case "^9(\d{12})$":
+						$label = $text['label-9d12'];
+						$abbrv = "9.Intl";
+						break;
+					case "^9(\d{13})$":
+						$label = $text['label-9d13'];
+						$abbrv = "9.13d";
+						break;
+					case "^9(\d{14})$":
+						$label = $text['label-9d14'];
+						break;
+					case "^9(\d{12,15})$":
+						$label = $text['label-9d15'];
+						$abbrv = "9.Intl";
+						break;
+					case "^1?(8(00|55|66|77|88)[2-9]\d{6})$":
+						$label = $text['label-800'];
+						$abbrv = "tollfree";
+						break;
+					default:
+						$label = $dialplan_expression;
+						$abbrv = filename_safe($dialplan_expression);
+					}
+
+					if ($gateway_type == "gateway") {
+						$dialplan_name = $gateway_name.".".$abbrv;
+						$action_data = "sofia/gateway/".$tmp_gateway_name."/".$prefix_number."\$1";
+					}
+					if (strlen($gateway_2_name) > 0 && $gateway_2_type == "gateway") {
+						$extension_2_name = $gateway_2_name.".".$abbrv;
+						$bridge_2_data .= "sofia/gateway/".$tmp_gateway_2_name."/".$prefix_number."\$1";
+					}
+					if (strlen($gateway_3_name) > 0 && $gateway_3_type == "gateway") {
+						$extension_3_name = $gateway_3_name.".".$abbrv;
+						$bridge_3_data .= "sofia/gateway/".$tmp_gateway_3_name."/".$prefix_number."\$1";
+					}
+					if ($gateway_type == "freetdm") {
+						$dialplan_name = "freetdm.".$abbrv;
+						$action_data = $gateway."/1/a/".$prefix_number."\$1";
+					}
+					if ($gateway_2_type == "freetdm") {
+						$extension_2_name = "freetdm.".$abbrv;
+						$bridge_2_data .= $gateway_2."/1/a/".$prefix_number."\$1";
+					}
+					if ($gateway_3_type == "freetdm") {
+						$extension_3_name = "freetdm.".$abbrv;
+						$bridge_3_data .= $gateway_3."/1/a/".$prefix_number."\$1";
+					}
+					if ($gateway_type == "xmpp") {
+						$dialplan_name = "xmpp.".$abbrv;
+						$action_data = "dingaling/gtalk/+".$prefix_number."\$1@voice.google.com";
+					}
+					if ($gateway_2_type == "xmpp") {
+						$extension_2_name = "xmpp.".$abbrv;
+						$bridge_2_data .= "dingaling/gtalk/+".$prefix_number."\$1@voice.google.com";
+					}
+					if ($gateway_3_type == "xmpp") {
+						$extension_3_name = "xmpp.".$abbrv;
+						$bridge_3_data .= "dingaling/gtalk/+".$prefix_number."\$1@voice.google.com";
+					}
+					if ($gateway_type == "enum") {
+						if (strlen($bridge_2_data) == 0) {
+							$dialplan_name = "enum.".$abbrv;
+						}
+						else {
+							$dialplan_name = $extension_2_name;
+						}
+						$action_data = "\${enum_auto_route}";
+					}
+					if ($gateway_2_type == "enum") {
+						$bridge_2_data .= "\${enum_auto_route}";
+					}
+					if ($gateway_3_type == "enum") {
+						$bridge_3_data .= "\${enum_auto_route}";
+					}
+					if (strlen($dialplan_order) == 0) {
+						$dialplan_order ='333';
+					}
+					$dialplan_context = $_SESSION['context'];
+					$dialplan_continue = 'false';
+					$app_uuid = '8c914ec3-9fc0-8ab5-4cda-6c9288bdc9a3';
+
+					//add the main dialplan include entry
+						$dialplan_uuid = uuid();
+						$sql = "insert into v_dialplans ";
+						$sql .= "(";
+						$sql .= "domain_uuid, ";
+						$sql .= "dialplan_uuid, ";
+						$sql .= "app_uuid, ";
+						$sql .= "dialplan_name, ";
+						$sql .= "dialplan_order, ";
+						$sql .= "dialplan_continue, ";
+						$sql .= "dialplan_context, ";
+						$sql .= "dialplan_enabled, ";
+						$sql .= "dialplan_description ";
+						$sql .= ") ";
+						$sql .= "values ";
+						$sql .= "(";
+						$sql .= "'".$_SESSION['domain_uuid']."', ";
+						$sql .= "'$dialplan_uuid', ";
+						$sql .= "'$app_uuid', ";
+						$sql .= "'$dialplan_name', ";
+						$sql .= "'$dialplan_order', ";
+						$sql .= "'$dialplan_continue', ";
+						$sql .= "'$dialplan_context', ";
+						$sql .= "'$dialplan_enabled', ";
+						$sql .= "'$dialplan_description' ";
+						$sql .= ")";
+						if ($v_debug) {
+							echo $sql."<br />";
+						}
+						$db->exec(check_sql($sql));
+						unset($sql);
+
+					$dialplan_detail_tag = 'condition'; //condition, action, antiaction
+					$dialplan_detail_type = 'destination_number';
+					$dialplan_detail_data = $dialplan_expression;
+					$dialplan_detail_order = '005';
+					$dialplan_detail_group = '';
+					dialplan_detail_add($_SESSION['domain_uuid'], $dialplan_uuid, $dialplan_detail_tag, $dialplan_detail_order, $dialplan_detail_group, $dialplan_detail_type, $dialplan_detail_data);
+
+					$dialplan_detail_tag = 'action'; //condition, action, antiaction
+					$dialplan_detail_type = 'set';
+					$dialplan_detail_data = 'sip_h_X-accountcode=${accountcode}';
+					$dialplan_detail_order = '010';
+					$dialplan_detail_group = '';
+					dialplan_detail_add($_SESSION['domain_uuid'], $dialplan_uuid, $dialplan_detail_tag, $dialplan_detail_order, $dialplan_detail_group, $dialplan_detail_type, $dialplan_detail_data);
+
+					$dialplan_detail_tag = 'action'; //condition, action, antiaction
+					$dialplan_detail_type = 'set';
+					$dialplan_detail_data = 'sip_h_X-Tag=';
+					$dialplan_detail_order = '012';
+					$dialplan_detail_group = '';
+					dialplan_detail_add($_SESSION['domain_uuid'], $dialplan_uuid, $dialplan_detail_tag, $dialplan_detail_order, $dialplan_detail_group, $dialplan_detail_type, $dialplan_detail_data);
+
+					$dialplan_detail_tag = 'action'; //condition, action, antiaction
+					$dialplan_detail_type = 'set';
+					$dialplan_detail_data = 'call_direction=outbound';
+					$dialplan_detail_order = '015';
+					$dialplan_detail_group = '';
+					dialplan_detail_add($_SESSION['domain_uuid'], $dialplan_uuid, $dialplan_detail_tag, $dialplan_detail_order, $dialplan_detail_group, $dialplan_detail_type, $dialplan_detail_data);
+
+					$dialplan_detail_tag = 'action'; //condition, action, antiaction
+					$dialplan_detail_type = 'set';
+					$dialplan_detail_data = 'hangup_after_bridge=true';
+					$dialplan_detail_order = '020';
+					$dialplan_detail_group = '';
+					dialplan_detail_add($_SESSION['domain_uuid'], $dialplan_uuid, $dialplan_detail_tag, $dialplan_detail_order, $dialplan_detail_group, $dialplan_detail_type, $dialplan_detail_data);
+
+					$dialplan_detail_tag = 'action'; //condition, action, antiaction
+					$dialplan_detail_type = 'set';
+					$dialplan_detail_data = 'effective_caller_id_name=${outbound_caller_id_name}';
+					$dialplan_detail_order = '025';
+					$dialplan_detail_group = '';
+					dialplan_detail_add($_SESSION['domain_uuid'], $dialplan_uuid, $dialplan_detail_tag, $dialplan_detail_order, $dialplan_detail_group, $dialplan_detail_type, $dialplan_detail_data);
+
+					$dialplan_detail_tag = 'action'; //condition, action, antiaction
+					$dialplan_detail_type = 'set';
+					if ($dialplan_expression == '^(911)$') {
+						$dialplan_detail_data = 'effective_caller_id_number=${emergency_caller_id_number}';
+					}
+					else {
+						$dialplan_detail_data = 'effective_caller_id_number=${outbound_caller_id_number}';
+					}
+					$dialplan_detail_order = '030';
+					$dialplan_detail_group = '';
+					dialplan_detail_add($_SESSION['domain_uuid'], $dialplan_uuid, $dialplan_detail_tag, $dialplan_detail_order, $dialplan_detail_group, $dialplan_detail_type, $dialplan_detail_data);
+
+					$dialplan_detail_tag = 'action'; //condition, action, antiaction
+					$dialplan_detail_type = 'set';
+					$dialplan_detail_data = 'inherit_codec=true';
+					$dialplan_detail_order = '035';
+					$dialplan_detail_group = '';
+					dialplan_detail_add($_SESSION['domain_uuid'], $dialplan_uuid, $dialplan_detail_tag, $dialplan_detail_order, $dialplan_detail_group, $dialplan_detail_type, $dialplan_detail_data);
+
+					if (strlen($bridge_2_data) > 0) {
+						$dialplan_detail_tag = 'action'; //condition, action, antiaction
+						$dialplan_detail_type = 'set';
+						$dialplan_detail_data = 'continue_on_fail=true';
+						$dialplan_detail_order = '040';
+						$dialplan_detail_group = '';
+						dialplan_detail_add($_SESSION['domain_uuid'], $dialplan_uuid, $dialplan_detail_tag, $dialplan_detail_order, $dialplan_detail_group, $dialplan_detail_type, $dialplan_detail_data);
+					}
+
+					if ($gateway_type == "enum" || $gateway_2_type == "enum") {
+						$dialplan_detail_tag = 'action'; //condition, action, antiaction
+						$dialplan_detail_type = 'enum';
+						$dialplan_detail_data = $prefix_number."$1 e164.org";
+						$dialplan_detail_order = '045';
+						$dialplan_detail_group = '';
+						dialplan_detail_add($_SESSION['domain_uuid'], $dialplan_uuid, $dialplan_detail_tag, $dialplan_detail_order, $dialplan_detail_group, $dialplan_detail_type, $dialplan_detail_data);
+					}
+
+					if (strlen($limit) > 0) {
+						$dialplan_detail_tag = 'action'; //condition, action, antiaction
+						$dialplan_detail_type = 'limit';
+						$dialplan_detail_data = "db \${domain} outbound ".$limit." !USER_BUSY";
+						$dialplan_detail_order = '050';
+						$dialplan_detail_group = '';
+						dialplan_detail_add($_SESSION['domain_uuid'], $dialplan_uuid, $dialplan_detail_tag, $dialplan_detail_order, $dialplan_detail_group, $dialplan_detail_type, $dialplan_detail_data);
+					}
+
+					$dialplan_detail_tag = 'action'; //condition, action, antiaction
+					$dialplan_detail_type = 'bridge';
+					$dialplan_detail_data = $action_data;
+					$dialplan_detail_order = '055';
+					$dialplan_detail_group = '';
+					dialplan_detail_add($_SESSION['domain_uuid'], $dialplan_uuid, $dialplan_detail_tag, $dialplan_detail_order, $dialplan_detail_group, $dialplan_detail_type, $dialplan_detail_data);
+
+					if (strlen($bridge_2_data) > 0) {
+						$dialplan_detail_tag = 'action'; //condition, action, antiaction
+						$dialplan_detail_type = 'bridge';
+						$dialplan_detail_data = $bridge_2_data;
+						$dialplan_detail_order = '060';
+						$dialplan_detail_group = '';
+						dialplan_detail_add($_SESSION['domain_uuid'], $dialplan_uuid, $dialplan_detail_tag, $dialplan_detail_order, $dialplan_detail_group, $dialplan_detail_type, $dialplan_detail_data);
+					}
+
+					if (strlen($bridge_3_data) > 0) {
+						$dialplan_detail_tag = 'action'; //condition, action, antiaction
+						$dialplan_detail_type = 'bridge';
+						$dialplan_detail_data = $bridge_3_data;
+						$dialplan_detail_order = '065';
+						$dialplan_detail_group = '';
+						dialplan_detail_add($_SESSION['domain_uuid'], $dialplan_uuid, $dialplan_detail_tag, $dialplan_detail_order, $dialplan_detail_group, $dialplan_detail_type, $dialplan_detail_data);
+					}
+
+					unset($bridge_2_data);
+					unset($bridge_3_data);
+					unset($label);
+					unset($abbrv);
+					unset($dialplan_expression);
+					unset($action_data);
+				} //if strlen
+			} //end for each
+		}
+
+		//delete the dialplan context from memcache
+			$fp = event_socket_create($_SESSION['event_socket_ip_address'], $_SESSION['event_socket_port'], $_SESSION['event_socket_password']);
+			if ($fp) {
+				$switch_cmd = "memcache delete dialplan:".$dialplan_context."@".$_SESSION['domain_name'];
+				$switch_result = event_socket_request($fp, 'api '.$switch_cmd);
+			}
+
+		//synchronize the xml config
+			save_dialplan_xml();
+
+		//redirect the user
+			require_once "includes/header.php";
+			echo "<meta http-equiv=\"refresh\" content=\"2;url=".PROJECT_PATH."/app/dialplan/dialplans.php?app_uuid=8c914ec3-9fc0-8ab5-4cda-6c9288bdc9a3\">\n";
+			echo "<div align='center'>\n";
+			echo $text['message-update']."\n";
+			echo "</div>\n";
+			require_once "includes/footer.php";
+			return;
+	} //end if (count($_POST)>0 && strlen($_POST["persistformvar"]) == 0)
+?>
+
+<script type="text/javascript">
+<!--
+function type_onchange(dialplan_detail_type) {
+	var field_value = document.getElementById(dialplan_detail_type).value;
+
+	if (dialplan_detail_type == "condition_field_1") {
+		if (field_value == "destination_number") {
+			document.getElementById("desc_condition_expression_1").innerHTML = "expression: ^12081231234$";
+		}
+		else if (field_value == "zzz") {
+			document.getElementById("desc_condition_expression_1").innerHTML = "";
+		}
+		else {
+			document.getElementById("desc_condition_expression_1").innerHTML = "";
+		}
+	}
+	if (dialplan_detail_type == "condition_field_2") {
+		if (field_value == "destination_number") {
+			document.getElementById("desc_condition_expression_2").innerHTML = "expression: ^12081231234$";
+		}
+		else if (field_value == "zzz") {
+			document.getElementById("desc_condition_expression_2").innerHTML = "";
+		}
+		else {
+			document.getElementById("desc_condition_expression_2").innerHTML = "";
+		}
+	}
+-->
+</script>
+
+<?php
+//show the content
+	echo "<div align='center'>";
+	echo "<table width='100%' border='0' cellpadding='0' cellspacing='2'>\n";
+
+	echo "<tr class='border'>\n";
+	echo "	<td align=\"left\">\n";
+	echo "		<br>";
+
+	echo "<form method='post' name='frm' action=''>\n";
+	echo "<div align='center'>\n";
+
+	echo " 	<table width=\"100%\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\">\n";
+	echo "	<tr>\n";
+	echo "		<td align='left'><span class=\"vexpl\"><span class=\"red\"><strong>".$text['label-outbound-routes']."\n";
+	echo "			</strong></span></span>\n";
+	echo "		</td>\n";
+	echo "		<td align='right'>\n";
+	echo "			<input type='button' class='btn' name='' alt='".$text['button-back']."' onclick=\"window.location='".PROJECT_PATH."/app/dialplan/dialplans.php?app_uuid=8c914ec3-9fc0-8ab5-4cda-6c9288bdc9a3'\" value='".$text['button-back']."'>\n";
+	echo "		</td>\n";
+	echo "	</tr>\n";
+	echo "	<tr>\n";
+	echo "		<td align='left' colspan='2'>\n";
+	echo "			<span class=\"vexpl\">\n";
+	echo "				".$text['description-outbound-routes']."\n";
+	echo "			</span>\n";
+	echo "		</td>\n";
+	echo "	</tr>\n";
+	echo "	</table>";
+
+	echo "<br />\n";
+	echo "<br />\n";
+
+	echo "<table width='100%'  border='0' cellpadding='6' cellspacing='0'>\n";
+
+	echo "<tr>\n";
+	echo "<td class='vncellreq' valign='top' align='left' nowrap>\n";
+	echo "    ".$text['label-gateway'].":\n";
+	echo "</td>\n";
+	echo "<td class='vtable' align='left'>\n";
+	
+	if (if_group("superadmin")) {
+		echo "<script>\n";
+		echo "var Objs;\n";
+		echo "\n";
+		echo "function changeToInput(obj){\n";
+		echo "	tb=document.createElement('INPUT');\n";
+		echo "	tb.type='text';\n";
+		echo "	tb.name=obj.name;\n";
+		echo "	tb.setAttribute('class', 'formfld');\n";
+		echo "	tb.value=obj.options[obj.selectedIndex].value;\n";
+		echo "	tbb=document.createElement('INPUT');\n";
+		echo "	tbb.setAttribute('class', 'btn');\n";
+		echo "	tbb.type='button';\n";
+		echo "	tbb.value='<';\n";
+		echo "	tbb.objs=[obj,tb,tbb];\n";
+		echo "	tbb.onclick=function(){ Replace(this.objs); }\n";
+		echo "	obj.parentNode.insertBefore(tb,obj);\n";
+		echo "	obj.parentNode.insertBefore(tbb,obj);\n";
+		echo "	obj.parentNode.removeChild(obj);\n";
+		echo "}\n";
+		echo "\n";
+		echo "function Replace(obj){\n";
+		echo "	obj[2].parentNode.insertBefore(obj[0],obj[2]);\n";
+		echo "	obj[0].parentNode.removeChild(obj[1]);\n";
+		echo "	obj[0].parentNode.removeChild(obj[2]);\n";
+		echo "}\n";
+		echo "</script>\n";
+		echo "\n";
+	}
+
+	//set the onchange
+	if (if_group("superadmin")) { $onchange = "onchange='changeToInput(this);'"; } else { $onchange = ''; }
+
+	$sql = "select * from v_gateways ";
+	$sql .= "where enabled = 'true' ";
+	if (permission_exists('outbound_route_any_gateway')) {
+		$sql .= " order by domain_uuid = '$domain_uuid' ";
+	}
+	else {
+		$sql .= " and domain_uuid = '$domain_uuid' ";
+	}
+	$prep_statement = $db->prepare(check_sql($sql));
+	$prep_statement->execute();
+	$result = $prep_statement->fetchAll(PDO::FETCH_NAMED);
+	unset ($prep_statement, $sql);
+	echo "<select name=\"gateway\" id=\"gateway\" class=\"formfld\" $onchange style='width: 60%;'>\n";
+	echo "<option value=''></option>\n";
+	echo "<optgroup label='".$text['label-gateway']."'>";
+	$previous_domain_uuid = '';
+	foreach($result as $row) {
+		if (permission_exists('outbound_route_any_gateway')) {
+			if ($previous_domain_uuid != $row['domain_uuid']) {
+				echo "</optgroup>";
+				echo "<optgroup label='&nbsp; &nbsp;".$_SESSION['domains'][$row['domain_uuid']]['domain_name']."'>";
+			}
+			if ($row['gateway'] == $gateway_name) {
+				echo "<option value=\"".$row['gateway_uuid'].":".$row['gateway']."\" selected=\"selected\">&nbsp; &nbsp;".$row['gateway']."</option>\n";
+			}
+			else {
+				echo "<option value=\"".$row['gateway_uuid'].":".$row['gateway']."\">&nbsp; &nbsp;".$row['gateway']."</option>\n";
+			}
+		}
+		else {
+			if ($row['gateway'] == $gateway_name) {
+				echo "<option value=\"".$row['gateway_uuid'].":".$row['gateway']."\" $onchange selected=\"selected\">".$row['gateway']."</option>\n";
+			}
+			else {
+				echo "<option value=\"".$row['gateway_uuid'].":".$row['gateway']."\">".$row['gateway']."</option>\n";
+			}
+		}
+		$previous_domain_uuid = $row['domain_uuid'];
+	}
+	unset($sql, $result, $row_count);
+	echo "</optgroup>";
+	echo "	<optgroup label='".$text['label-add-options']."'>";
+	echo "	<option value=\"enum\">enum</option>\n";
+	echo "	<option value=\"freetdm\">freetdm</option>\n";
+	echo "	<option value=\"xmpp\">xmpp</option>\n";
+	echo "</optgroup>";
+	echo "</select>\n";
+	echo "<br />\n";
+	echo $text['message-add-options']."\n";
+	echo "</td>\n";
+	echo "</tr>\n";
+
+
+	echo "<tr>\n";
+	echo "<td class='vncell' valign='top' align='left' nowrap>\n";
+	echo "    ".$text['label-alt1'].":\n";
+	echo "</td>\n";
+	echo "<td class='vtable' align='left'>\n";
+
+	$sql = "select * from v_gateways ";
+	$sql .= "where enabled = 'true' ";
+	if (permission_exists('outbound_route_any_gateway')) {
+		$sql .= "order by domain_uuid = '$domain_uuid' ";
+	}
+	else {
+		$sql .= "and domain_uuid = '$domain_uuid' ";
+	}
+	$prep_statement = $db->prepare(check_sql($sql));
+	$prep_statement->execute();
+	$result = $prep_statement->fetchAll(PDO::FETCH_NAMED);
+	unset ($prep_statement, $sql);
+	echo "<select name=\"gateway_2\" id=\"gateway\" class=\"formfld\" $onchange style='width: 60%;'>\n";
+	echo "<option value=''></option>\n";
+	echo "<optgroup label='".$text['label-sip-gateway']."'>";
+	$previous_domain_uuid = '';
+	foreach($result as $row) {
+		if (permission_exists('outbound_route_any_gateway')) {
+			if ($previous_domain_uuid != $row['domain_uuid']) {
+				echo "</optgroup>";
+				echo "<optgroup label='&nbsp; &nbsp;".$_SESSION['domains'][$row['domain_uuid']]['domain_name']."'>";
+			}
+			if ($row['gateway'] == $gateway_2_name) {
+				echo "<option value=\"".$row['gateway_uuid'].":".$row['gateway']."\" selected=\"selected\">&nbsp; &nbsp;".$row['gateway']."</option>\n";
+			}
+			else {
+				echo "<option value=\"".$row['gateway_uuid'].":".$row['gateway']."\">&nbsp; &nbsp;".$row['gateway']."</option>\n";
+			}
+		}
+		else {
+			if ($row['gateway'] == $gateway_2_name) {
+				echo "<option value=\"".$row['gateway_uuid'].":".$row['gateway']."\" selected=\"selected\">".$row['gateway']."</option>\n";
+			}
+			else {
+				echo "<option value=\"".$row['gateway_uuid'].":".$row['gateway']."\">".$row['gateway']."</option>\n";
+			}
+		}
+		$previous_domain_uuid = $row['domain_uuid'];
+	}
+	unset($sql, $result, $row_count, $previous_domain_uuid);
+	echo "</optgroup>";
+	echo "<optgroup label='".$text['label-add-options']."'>";
+	echo "	<option value=\"enum\">enum</option>\n";
+	echo "	<option value=\"freetdm\">freetdm</option>\n";
+	echo "	<option value=\"xmpp\">xmpp</option>\n";
+	echo "</optgroup>";
+	echo "</select>\n";
+	echo "<br />\n";
+	echo $text['message-add-options1']."\n";
+	echo "</td>\n";
+	echo "</tr>\n";
+
+
+	echo "<tr>\n";
+	echo "<td class='vncell' valign='top' align='left' nowrap>\n";
+	echo "    ".$text['label-alt2'].":\n";
+	echo "</td>\n";
+	echo "<td class='vtable' align='left'>\n";
+
+	$sql = "select * from v_gateways ";
+	$sql .= "where enabled = 'true' ";
+	if (permission_exists('outbound_route_any_gateway')) {
+		$sql .= "order by domain_uuid = '$domain_uuid' ";
+	}
+	else {
+		$sql .= "and domain_uuid = '$domain_uuid' ";
+	}
+	$prep_statement = $db->prepare(check_sql($sql));
+	$prep_statement->execute();
+	$result = $prep_statement->fetchAll(PDO::FETCH_NAMED);
+	unset ($prep_statement, $sql);
+	echo "<select name=\"gateway_3\" id=\"gateway\" class=\"formfld\" $onchange style='width: 60%;'>\n";
+	echo "<option value=''></option>\n";
+	echo "<optgroup label='".$text['label-sip-gateway']."'>";
+	$previous_domain_uuid = '';
+	foreach($result as $row) {
+		if (permission_exists('outbound_route_any_gateway')) {
+			if ($previous_domain_uuid != $row['domain_uuid']) {
+				echo "</optgroup>";
+				echo "<optgroup label='&nbsp; &nbsp;".$_SESSION['domains'][$row['domain_uuid']]['domain_name']."'>";
+			}
+			if ($row['gateway'] == $gateway_3_name) {
+				echo "<option value=\"".$row['gateway_uuid'].":".$row['gateway']."\" selected=\"selected\">&nbsp; &nbsp;".$row['gateway']."</option>\n";
+			}
+			else {
+				echo "<option value=\"".$row['gateway_uuid'].":".$row['gateway']."\">&nbsp; &nbsp;".$row['gateway']."</option>\n";
+			}
+		}
+		else {
+			if ($row['gateway'] == $gateway_3_name) {
+				echo "<option value=\"".$row['gateway_uuid'].":".$row['gateway']."\" selected=\"selected\">".$row['gateway']."</option>\n";
+			}
+			else {
+				echo "<option value=\"".$row['gateway_uuid'].":".$row['gateway']."\">".$row['gateway']."</option>\n";
+			}
+		}
+		$previous_domain_uuid = $row['domain_uuid'];
+	}
+	unset($sql, $result, $row_count, $previous_domain_uuid);
+	echo "</optgroup>";
+	echo "<optgroup label='".$text['label-add-options']."'>";
+	echo "	<option value=\"enum\">enum</option>\n";
+	echo "	<option value=\"freetdm\">freetdm</option>\n";
+	echo "	<option value=\"xmpp\">xmpp</option>\n";
+	echo "</optgroup>";
+	echo "</select>\n";
+	echo "<br />\n";
+	echo $text['message-add-options2']."\n";
+	echo "</td>\n";
+	echo "</tr>\n";
+
+
+	echo "<tr>\n";
+	echo "  <td valign=\"top\" class=\"vncellreq\">".$text['label-dialplan-expression'].":</td>\n";
+	echo "  <td align='left' class=\"vtable\">";
+	echo "    <textarea name=\"dialplan_expression\" id=\"dialplan_expression\" class=\"formfld\" style='width: 60%;' cols=\"30\" rows=\"4\" wrap=\"off\"></textarea>\n";
+	echo "    <br>\n";
+	echo "    <select name='dialplan_expression_select' id='dialplan_expression_select' onchange=\"document.getElementById('dialplan_expression').value += document.getElementById('dialplan_expression_select').value + '\\n';\" class='formfld' style='width: 60%;'>\n";
+	echo "    <option></option>\n";
+	echo "    <option value='^(\\d{2})\$'>".$text['label-2d']."</option>\n";
+	echo "    <option value='^(\\d{3})\$'>".$text['label-3d']."</option>\n";
+	echo "    <option value='^(\\d{4})\$'>".$text['label-4d']."</option>\n";
+	echo "    <option value='^(\\d{5})\$'>".$text['label-5d']."</option>\n";
+	echo "    <option value='^(\\d{6})\$'>".$text['label-6d']."</option>\n";
+	echo "    <option value='^(\\d{7})\$'>".$text['label-7d']."</option>\n";
+	echo "    <option value='^(\\d{8})\$'>".$text['label-8d']."</option>\n";
+	echo "    <option value='^(\\d{9})\$'>".$text['label-9d']."</option>\n";
+	echo "    <option value='^(\\d{10})\$'>".$text['label-10d']."</option>\n";
+	echo "    <option value='^\+?(\\d{11})\$'>".$text['label-11d']."</option>\n";
+	echo "    <option value='^(\\d{12})\$'>".$text['label-12d']."</option>\n";
+	echo "    <option value='^(\\d{13})\$'>".$text['label-13d']."</option>\n";
+	echo "    <option value='^(\\d{14})\$'>".$text['label-14d']."</option>\n";
+	echo "    <option value='^(\\d{15})\$'>".$text['label-int']."</option>\n";
+	echo "    <option value='^(311)\$'>".$text['label-311']."</option>\n";
+	echo "    <option value='^(411)\$'>".$text['label-411']."</option>\n";
+	echo "    <option value='^(911)\$'>".$text['label-911']."</option>\n";
+	echo "    <option value='^1?(8(00|55|66|77|88)[2-9]\\d{6})\$'>".$text['label-800']."</option>\n";
+	echo "    <option value='^9(\\d{2})\$'>".$text['label-9d2']."</option>\n";
+	echo "    <option value='^9(\\d{3})\$'>".$text['label-9d3']."</option>\n";
+	echo "    <option value='^9(\\d{4})\$'>".$text['label-9d4']."</option>\n";
+	echo "    <option value='^9(\\d{5})\$'>".$text['label-9d5']."</option>\n";
+	echo "    <option value='^9(\\d{6})\$'>".$text['label-9d6']."</option>\n";
+	echo "    <option value='^9(\\d{7})\$'>".$text['label-9d7']."</option>\n";
+	echo "    <option value='^9(\\d{8})\$'>".$text['label-9d8']."</option>\n";
+	echo "    <option value='^9(\\d{9})\$'>".$text['label-9d9']."</option>\n";
+	echo "    <option value='^9(\\d{10})\$'>".$text['label-9d10']."</option>\n";
+	echo "    <option value='^9(\\d{11})\$'>".$text['label-9d11']."</option>\n";
+	echo "    <option value='^9(\\d{12})\$'>".$text['label-9d12']."</option>\n";
+	echo "    <option value='^9(\\d{13})\$'>".$text['label-9d13']."</option>\n";
+	echo "    <option value='^9(\\d{14})\$'>".$text['label-9d14']."</option>\n";
+	echo "    <option value='^9(\\d{15})\$'>".$text['label-9d15']."</option>\n";
+	echo "    </select>\n";
+	echo "    <span class=\"vexpl\">\n";
+	echo "    <br />\n";
+	echo "    ".$text['description-shortcut']." \n";
+	echo "    </span></td>\n";
+	echo "</tr>";
+
+	echo "<tr>\n";
+	echo "<td class='vncell' valign='top' align='left' nowrap>\n";
+	echo "    ".$text['label-prefix'].":\n";
+	echo "</td>\n";
+	echo "<td colspan='4' class='vtable' align='left'>\n";
+	echo "    <input class='formfld' style='width: 60%;' type='text' name='prefix_number' maxlength='255' value=\"$prefix_number\">\n";
+	echo "<br />\n";
+	echo $text['description-enter-prefix']."\n";
+	echo "</td>\n";
+	echo "</tr>\n";
+
+	echo "<tr>\n";
+	echo "<td class='vncell' valign='top' align='left' nowrap>\n";
+	echo "    ".$text['label-limit'].":\n";
+	echo "</td>\n";
+	echo "<td colspan='4' class='vtable' align='left'>\n";
+	echo "    <input class='formfld' style='width: 60%;' type='text' name='limit' maxlength='255' value=\"$limit\">\n";
+	echo "<br />\n";
+	echo $text['description-limit']."\n";
+	echo "</td>\n";
+	echo "</tr>\n";
+
+	echo "<tr>\n";
+	echo "<td class='vncellreq' valign='top' align='left' nowrap>\n";
+	echo "    ".$text['label-order'].":\n";
+	echo "</td>\n";
+	echo "<td class='vtable' align='left'>\n";
+	echo "              <select name='dialplan_order' class='formfld' style='width: 60%;'>\n";
+	//echo "              <option></option>\n";
+	if (strlen(htmlspecialchars($dialplan_order))> 0) {
+		echo "              <option selected='yes' value='".htmlspecialchars($dialplan_order)."'>".htmlspecialchars($dialplan_order)."</option>\n";
+	}
+	$i=0;
+	while($i<=999) {
+		if (strlen($i) == 1) { echo "              <option value='00$i'>00$i</option>\n"; }
+		if (strlen($i) == 2) { echo "              <option value='0$i'>0$i</option>\n"; }
+		if (strlen($i) == 3) { echo "              <option value='$i'>$i</option>\n"; }
+		$i++;
+	}
+	echo "              </select>\n";
+	echo "<br />\n";
+	echo $text['description-order']."\n";
+	echo "</td>\n";
+	echo "</tr>\n";
+
+	echo "<tr>\n";
+	echo "<td class='vncellreq' valign='top' align='left' nowrap>\n";
+	echo "    ".$text['label-enabled'].":\n";
+	echo "</td>\n";
+	echo "<td class='vtable' align='left'>\n";
+	echo "    <select class='formfld' name='dialplan_enabled' style='width: 60%;'>\n";
+	//echo "    <option value=''></option>\n";
+	if ($dialplan_enabled == "true") { 
+		echo "    <option value='true' selected='selected'>".$text['label-true']."</option>\n";
+	}
+	else {
+		echo "    <option value='true'>".$text['label-true']."</option>\n";
+	}
+	if ($dialplan_enabled == "false") { 
+		echo "    <option value='false' selected='selected'>".$text['label-false']."</option>\n";
+	}
+	else {
+		echo "    <option value='false'>".$text['label-false']."</option>\n";
+	}
+	echo "    </select>\n";
+	echo "<br />\n";
+	echo $text['description-enabled']."\n";
+	echo "</td>\n";
+	echo "</tr>\n";
+
+	echo "<tr>\n";
+	echo "<td class='vncell' valign='top' align='left' nowrap>\n";
+	echo "    ".$text['label-description'].":\n";
+	echo "</td>\n";
+	echo "<td colspan='4' class='vtable' align='left'>\n";
+	echo "    <input class='formfld' style='width: 60%;' type='text' name='dialplan_description' maxlength='255' value=\"$dialplan_description\">\n";
+	echo "<br />\n";
+	echo $text['description-description']."\n";
+	echo "</td>\n";
+	echo "</tr>\n";
+
+	echo "<tr>\n";
+	echo "	<td colspan='5' align='right'>\n";
+	if ($action == "update") {
+		echo "		<input type='hidden' name='dialplan_uuid' value='$dialplan_uuid'>\n";
+	}
+	echo "		<input type='submit' name='submit' class='btn' value='".$text['button-save']."'>\n";
+	echo "	</td>\n";
+	echo "</tr>";
+
+	echo "</table>";
+	echo "</div>";
+	echo "</form>";
+
+	echo "</td>\n";
+	echo "</tr>";
+	echo "</table>";
+	echo "</div>";
+
+	echo "<br><br>";
+
+//show the footer
+	require_once "includes/footer.php";
+?>

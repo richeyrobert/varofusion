@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/3976/trunk/fusionpbx/includes/install/scripts/app/voicemail/resources/functions
+END
+delete_recording.lua
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/3695/trunk/fusionpbx/includes/install/scripts/app/voicemail/resources/functions/delete_recording.lua
+END
+check_password.lua
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/3695/trunk/fusionpbx/includes/install/scripts/app/voicemail/resources/functions/check_password.lua
+END
+send_email.lua
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/3976/trunk/fusionpbx/includes/install/scripts/app/voicemail/resources/functions/send_email.lua
+END
+macro.lua
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/3695/trunk/fusionpbx/includes/install/scripts/app/voicemail/resources/functions/macro.lua
+END
+record_greeting.lua
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/3976/trunk/fusionpbx/includes/install/scripts/app/voicemail/resources/functions/record_greeting.lua
+END
+record_menu.lua
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/3695/trunk/fusionpbx/includes/install/scripts/app/voicemail/resources/functions/record_menu.lua
+END
+forward_to_extension.lua
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/3976/trunk/fusionpbx/includes/install/scripts/app/voicemail/resources/functions/forward_to_extension.lua
+END
+choose_greeting.lua
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/3695/trunk/fusionpbx/includes/install/scripts/app/voicemail/resources/functions/choose_greeting.lua
+END
+advanced.lua
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/3695/trunk/fusionpbx/includes/install/scripts/app/voicemail/resources/functions/advanced.lua
+END
+message_waiting.lua
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/3976/trunk/fusionpbx/includes/install/scripts/app/voicemail/resources/functions/message_waiting.lua
+END
+message_saved.lua
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/3695/trunk/fusionpbx/includes/install/scripts/app/voicemail/resources/functions/message_saved.lua
+END
+change_password.lua
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/3695/trunk/fusionpbx/includes/install/scripts/app/voicemail/resources/functions/change_password.lua
+END
+main_menu.lua
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/3695/trunk/fusionpbx/includes/install/scripts/app/voicemail/resources/functions/main_menu.lua
+END
+return_call.lua
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/3695/trunk/fusionpbx/includes/install/scripts/app/voicemail/resources/functions/return_call.lua
+END
+record_name.lua
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/3976/trunk/fusionpbx/includes/install/scripts/app/voicemail/resources/functions/record_name.lua
+END
+record_message.lua
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/3976/trunk/fusionpbx/includes/install/scripts/app/voicemail/resources/functions/record_message.lua
+END
+get_voicemail_id.lua
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/3695/trunk/fusionpbx/includes/install/scripts/app/voicemail/resources/functions/get_voicemail_id.lua
+END
+on_dtmf.lua
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/3695/trunk/fusionpbx/includes/install/scripts/app/voicemail/resources/functions/on_dtmf.lua
+END
+play_greeting.lua
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/3695/trunk/fusionpbx/includes/install/scripts/app/voicemail/resources/functions/play_greeting.lua
+END
+menu_messages.lua
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/3976/trunk/fusionpbx/includes/install/scripts/app/voicemail/resources/functions/menu_messages.lua
+END
+listen_to_recording.lua
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/3695/trunk/fusionpbx/includes/install/scripts/app/voicemail/resources/functions/listen_to_recording.lua
+END

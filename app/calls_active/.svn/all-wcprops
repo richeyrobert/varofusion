@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/4014/trunk/fusionpbx/app/calls_active
+END
+calls_active_assigned_extensions_inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/3695/trunk/fusionpbx/app/calls_active/calls_active_assigned_extensions_inc.php
+END
+calls_active_extensions_inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/3695/trunk/fusionpbx/app/calls_active/calls_active_extensions_inc.php
+END
+calls_exec.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/3695/trunk/fusionpbx/app/calls_active/calls_exec.php
+END
+calls_active_inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/3695/trunk/fusionpbx/app/calls_active/calls_active_inc.php
+END
+root.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/2225/trunk/fusionpbx/app/calls_active/root.php
+END
+app_config.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/4014/trunk/fusionpbx/app/calls_active/app_config.php
+END
+app_languages.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/3695/trunk/fusionpbx/app/calls_active/app_languages.php
+END
+calls_active_extensions.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/3695/trunk/fusionpbx/app/calls_active/calls_active_extensions.php
+END
+calls_active.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/3695/trunk/fusionpbx/app/calls_active/calls_active.php
+END

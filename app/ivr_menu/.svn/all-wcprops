@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/4160/trunk/fusionpbx/app/ivr_menu
+END
+ivr_menu_copy.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/3695/trunk/fusionpbx/app/ivr_menu/ivr_menu_copy.php
+END
+ivr_menu_option_delete.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/3695/trunk/fusionpbx/app/ivr_menu/ivr_menu_option_delete.php
+END
+ivr_menu_options.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/3695/trunk/fusionpbx/app/ivr_menu/ivr_menu_options.php
+END
+ivr_menu_option_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/3695/trunk/fusionpbx/app/ivr_menu/ivr_menu_option_edit.php
+END
+root.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/2225/trunk/fusionpbx/app/ivr_menu/root.php
+END
+app_config.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/3976/trunk/fusionpbx/app/ivr_menu/app_config.php
+END
+app_languages.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/3695/trunk/fusionpbx/app/ivr_menu/app_languages.php
+END
+ivr_menu_delete.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/3695/trunk/fusionpbx/app/ivr_menu/ivr_menu_delete.php
+END
+ivr_menus.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/3695/trunk/fusionpbx/app/ivr_menu/ivr_menus.php
+END
+ivr_menu_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/4160/trunk/fusionpbx/app/ivr_menu/ivr_menu_edit.php
+END

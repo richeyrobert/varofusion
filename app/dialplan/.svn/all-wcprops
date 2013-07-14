@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/4024/trunk/fusionpbx/app/dialplan
+END
+dialplan_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/3695/trunk/fusionpbx/app/dialplan/dialplan_edit.php
+END
+dialplan_advanced.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/2673/trunk/fusionpbx/app/dialplan/dialplan_advanced.php
+END
+dialplan_details_delete.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/3695/trunk/fusionpbx/app/dialplan/dialplan_details_delete.php
+END
+dialplan_add.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/3695/trunk/fusionpbx/app/dialplan/dialplan_add.php
+END
+dialplan_copy.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/3695/trunk/fusionpbx/app/dialplan/dialplan_copy.php
+END
+dialplan_details_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/3695/trunk/fusionpbx/app/dialplan/dialplan_details_edit.php
+END
+root.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/2225/trunk/fusionpbx/app/dialplan/root.php
+END
+app_config.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/4024/trunk/fusionpbx/app/dialplan/app_config.php
+END
+dialplan_delete.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/3695/trunk/fusionpbx/app/dialplan/dialplan_delete.php
+END
+dialplans.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/3130/trunk/fusionpbx/app/dialplan/dialplans.php
+END
+app_defaults.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/2758/trunk/fusionpbx/app/dialplan/app_defaults.php
+END

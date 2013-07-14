@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/2760/trunk/fusionpbx/app/hot_desking/resources/xml/dialplan
+END
+470_hot-desk-login.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/2760/trunk/fusionpbx/app/hot_desking/resources/xml/dialplan/470_hot-desk-login.xml
+END
+475_hot-desk-logout.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/2760/trunk/fusionpbx/app/hot_desking/resources/xml/dialplan/475_hot-desk-logout.xml
+END

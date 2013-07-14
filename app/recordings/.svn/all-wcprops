@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/3976/trunk/fusionpbx/app/recordings
+END
+recordings.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/3976/trunk/fusionpbx/app/recordings/recordings.php
+END
+recordings_delete.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/3695/trunk/fusionpbx/app/recordings/recordings_delete.php
+END
+root.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/2225/trunk/fusionpbx/app/recordings/root.php
+END
+recordings_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/3695/trunk/fusionpbx/app/recordings/recordings_edit.php
+END
+recordings_play.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/3695/trunk/fusionpbx/app/recordings/recordings_play.php
+END
+app_config.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/3695/trunk/fusionpbx/app/recordings/app_config.php
+END
+app_languages.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/3695/trunk/fusionpbx/app/recordings/app_languages.php
+END
+app_defaults.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/2758/trunk/fusionpbx/app/recordings/app_defaults.php
+END
+slim.swf
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/2136/trunk/fusionpbx/app/recordings/slim.swf
+END

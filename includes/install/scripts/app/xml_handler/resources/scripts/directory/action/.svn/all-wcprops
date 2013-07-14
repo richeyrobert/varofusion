@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/3976/trunk/fusionpbx/includes/install/scripts/app/xml_handler/resources/scripts/directory/action
+END
+group_call.lua
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/!svn/ver/3976/trunk/fusionpbx/includes/install/scripts/app/xml_handler/resources/scripts/directory/action/group_call.lua
+END
+message-count.lua
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/!svn/ver/3976/trunk/fusionpbx/includes/install/scripts/app/xml_handler/resources/scripts/directory/action/message-count.lua
+END

@@ -1,0 +1,199 @@
+10
+
+dir
+4254
+http://fusionpbx.googlecode.com/svn/trunk/fusionpbx/app
+http://fusionpbx.googlecode.com/svn
+
+
+
+2013-07-09T23:44:44.204154Z
+4243
+markjcrane@gmail.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+e2954ef0-caed-11de-bd98-e341d93cc3cc
+
+xmpp
+dir
+
+system
+dir
+
+dialplan
+dir
+
+gateways
+dir
+
+call_flows
+dir
+
+time_conditions
+dir
+
+xml_cdr
+dir
+
+provision
+dir
+
+calls_active
+dir
+
+voicemails
+dir
+
+grammar_edit
+dir
+
+php_edit
+dir
+
+call_broadcast
+dir
+
+provision_editor
+dir
+
+sip_profiles
+dir
+
+sip_status
+dir
+
+calls
+dir
+
+ring_groups
+dir
+
+extensions
+dir
+
+recordings
+dir
+
+settings
+dir
+
+log_viewer
+dir
+
+dialplan_inbound
+dir
+
+dialplan_outbound
+dir
+
+destinations
+dir
+
+xml_edit
+dir
+
+call_center_active
+dir
+
+meetings
+dir
+
+contacts
+dir
+
+music_on_hold
+dir
+
+dialplan_features
+dir
+
+click_to_call
+dir
+
+devices
+dir
+
+schemas
+dir
+
+fifo
+dir
+
+sql_query
+dir
+
+exec
+dir
+
+ivr_menu
+dir
+
+conferences_active
+dir
+
+conferences
+dir
+
+conference_centers
+dir
+
+registrations
+dir
+
+hot_desking
+dir
+
+traffic_graph
+dir
+
+login
+dir
+
+modules
+dir
+
+script_edit
+dir
+
+content
+dir
+
+call_center
+dir
+
+vars
+dir
+
+hunt_groups
+dir
+
+fax
+dir
+
+fifo_list
+dir
+
+adminer
+dir
+
+voicemail_greetings
+dir
+
+services
+dir
+
+follow_me
+dir
+

@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/3976/trunk/fusionpbx/core/menu
+END
+menu_item_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/2818/trunk/fusionpbx/core/menu/menu_item_edit.php
+END
+app_defaults.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/2758/trunk/fusionpbx/core/menu/app_defaults.php
+END
+menu_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/3695/trunk/fusionpbx/core/menu/menu_edit.php
+END
+menu_restore_default.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/3976/trunk/fusionpbx/core/menu/menu_restore_default.php
+END
+menu_item_move_up.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/2043/trunk/fusionpbx/core/menu/menu_item_move_up.php
+END
+menu_item_list.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/2818/trunk/fusionpbx/core/menu/menu_item_list.php
+END
+menu_item_move_down.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/2220/trunk/fusionpbx/core/menu/menu_item_move_down.php
+END
+root.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/2225/trunk/fusionpbx/core/menu/root.php
+END
+menu.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/2463/trunk/fusionpbx/core/menu/menu.php
+END
+menu_item_delete.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/2806/trunk/fusionpbx/core/menu/menu_item_delete.php
+END
+app_config.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/3695/trunk/fusionpbx/core/menu/app_config.php
+END
+menu_delete.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/2161/trunk/fusionpbx/core/menu/menu_delete.php
+END

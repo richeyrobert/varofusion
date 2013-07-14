@@ -1,0 +1,419 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/4166/trunk/fusionpbx/includes/templates/conf/autoload_configs
+END
+osp.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/autoload_configs/osp.conf.xml
+END
+rss.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/autoload_configs/rss.conf.xml
+END
+dialplan_directory.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/autoload_configs/dialplan_directory.conf.xml
+END
+modules.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/autoload_configs/modules.conf.xml
+END
+spidermonkey.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/autoload_configs/spidermonkey.conf.xml
+END
+erlang_event.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/autoload_configs/erlang_event.conf.xml
+END
+post_load_modules.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/autoload_configs/post_load_modules.conf.xml
+END
+fax.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/autoload_configs/fax.conf.xml
+END
+lcr.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/autoload_configs/lcr.conf.xml
+END
+python.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/autoload_configs/python.conf.xml
+END
+hash.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/autoload_configs/hash.conf.xml
+END
+unicall.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/autoload_configs/unicall.conf.xml
+END
+acl.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/autoload_configs/acl.conf.xml
+END
+console.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/autoload_configs/console.conf.xml
+END
+enum.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/3695/trunk/fusionpbx/includes/templates/conf/autoload_configs/enum.conf.xml
+END
+xml_rpc.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/autoload_configs/xml_rpc.conf.xml
+END
+portaudio.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/autoload_configs/portaudio.conf.xml
+END
+voicemail.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/3774/trunk/fusionpbx/includes/templates/conf/autoload_configs/voicemail.conf.xml
+END
+callcenter.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/3774/trunk/fusionpbx/includes/templates/conf/autoload_configs/callcenter.conf.xml
+END
+fifo.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/autoload_configs/fifo.conf.xml
+END
+cdr_csv.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/2495/trunk/fusionpbx/includes/templates/conf/autoload_configs/cdr_csv.conf.xml
+END
+freetdm.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/2758/trunk/fusionpbx/includes/templates/conf/autoload_configs/freetdm.conf.xml
+END
+event_socket.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/autoload_configs/event_socket.conf.xml
+END
+cidlookup.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/3695/trunk/fusionpbx/includes/templates/conf/autoload_configs/cidlookup.conf.xml
+END
+cdr_sqlite.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/autoload_configs/cdr_sqlite.conf.xml
+END
+opal.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/autoload_configs/opal.conf.xml
+END
+nibblebill.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/autoload_configs/nibblebill.conf.xml
+END
+ivr.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/autoload_configs/ivr.conf.xml
+END
+switch.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/3774/trunk/fusionpbx/includes/templates/conf/autoload_configs/switch.conf.xml
+END
+shout.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/autoload_configs/shout.conf.xml
+END
+memcache.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/autoload_configs/memcache.conf.xml
+END
+http_cache.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/2495/trunk/fusionpbx/includes/templates/conf/autoload_configs/http_cache.conf.xml
+END
+directory.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/3774/trunk/fusionpbx/includes/templates/conf/autoload_configs/directory.conf.xml
+END
+redis.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/autoload_configs/redis.conf.xml
+END
+event_multicast.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/autoload_configs/event_multicast.conf.xml
+END
+spandsp.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/autoload_configs/spandsp.conf.xml
+END
+cdr_pg_csv.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/autoload_configs/cdr_pg_csv.conf.xml
+END
+unimrcp.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/autoload_configs/unimrcp.conf.xml
+END
+pocketsphinx.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/autoload_configs/pocketsphinx.conf.xml
+END
+alsa.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/autoload_configs/alsa.conf.xml
+END
+tts_commandline.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/autoload_configs/tts_commandline.conf.xml
+END
+logfile.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/4166/trunk/fusionpbx/includes/templates/conf/autoload_configs/logfile.conf.xml
+END
+rtmp.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/autoload_configs/rtmp.conf.xml
+END
+xml_curl.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/autoload_configs/xml_curl.conf.xml
+END
+db.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/3774/trunk/fusionpbx/includes/templates/conf/autoload_configs/db.conf.xml
+END
+zeroconf.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/autoload_configs/zeroconf.conf.xml
+END
+xml_cdr.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/2203/trunk/fusionpbx/includes/templates/conf/autoload_configs/xml_cdr.conf.xml
+END
+.htaccess
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/2043/trunk/fusionpbx/includes/templates/conf/autoload_configs/.htaccess
+END
+httapi.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/2495/trunk/fusionpbx/includes/templates/conf/autoload_configs/httapi.conf.xml
+END
+dingaling.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/autoload_configs/dingaling.conf.xml
+END
+sofia.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/autoload_configs/sofia.conf.xml
+END
+presence_map.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/autoload_configs/presence_map.conf.xml
+END
+perl.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/autoload_configs/perl.conf.xml
+END
+local_stream.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/3695/trunk/fusionpbx/includes/templates/conf/autoload_configs/local_stream.conf.xml
+END
+conference.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/3976/trunk/fusionpbx/includes/templates/conf/autoload_configs/conference.conf.xml
+END
+blacklist.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/autoload_configs/blacklist.conf.xml
+END
+abstraction.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/autoload_configs/abstraction.conf.xml
+END
+distributor.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/autoload_configs/distributor.conf.xml
+END
+skinny.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/autoload_configs/skinny.conf.xml
+END
+timezones.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/autoload_configs/timezones.conf.xml
+END
+cepstral.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/2043/trunk/fusionpbx/includes/templates/conf/autoload_configs/cepstral.conf.xml
+END
+cdr_mongodb.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/autoload_configs/cdr_mongodb.conf.xml
+END
+mongo.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/autoload_configs/mongo.conf.xml
+END
+easyroute.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/autoload_configs/easyroute.conf.xml
+END
+syslog.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/autoload_configs/syslog.conf.xml
+END
+lua.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/autoload_configs/lua.conf.xml
+END
+java.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/autoload_configs/java.conf.xml
+END
+sangoma_codec.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/autoload_configs/sangoma_codec.conf.xml
+END
+voicemail_ivr.conf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/2495/trunk/fusionpbx/includes/templates/conf/autoload_configs/voicemail_ivr.conf.xml
+END

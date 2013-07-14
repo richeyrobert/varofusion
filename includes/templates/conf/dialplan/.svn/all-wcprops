@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/2495/trunk/fusionpbx/includes/templates/conf/dialplan
+END
+skinny-patterns.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/dialplan/skinny-patterns.xml
+END
+features.xml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/dialplan/features.xml
+END
+public.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/2495/trunk/fusionpbx/includes/templates/conf/dialplan/public.xml
+END
+default.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/2300/trunk/fusionpbx/includes/templates/conf/dialplan/default.xml
+END

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/4017/trunk/fusionpbx/app/conferences
+END
+root.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/2225/trunk/fusionpbx/app/conferences/root.php
+END
+app_config.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/4017/trunk/fusionpbx/app/conferences/app_config.php
+END
+app_languages.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/3695/trunk/fusionpbx/app/conferences/app_languages.php
+END
+conference_delete.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/3695/trunk/fusionpbx/app/conferences/conference_delete.php
+END
+conferences.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/3695/trunk/fusionpbx/app/conferences/conferences.php
+END
+conference_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/3695/trunk/fusionpbx/app/conferences/conference_edit.php
+END

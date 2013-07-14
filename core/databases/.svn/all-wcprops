@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/3976/trunk/fusionpbx/core/databases
+END
+root.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/2390/trunk/fusionpbx/core/databases/root.php
+END
+app_config.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/3695/trunk/fusionpbx/core/databases/app_config.php
+END
+database_delete.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/2394/trunk/fusionpbx/core/databases/database_delete.php
+END
+databases.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/2758/trunk/fusionpbx/core/databases/databases.php
+END
+app_defaults.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/3976/trunk/fusionpbx/core/databases/app_defaults.php
+END
+database_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/2758/trunk/fusionpbx/core/databases/database_edit.php
+END

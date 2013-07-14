@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/4010/trunk/fusionpbx/app/call_center
+END
+call_center_queues.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/3695/trunk/fusionpbx/app/call_center/call_center_queues.php
+END
+root.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/2225/trunk/fusionpbx/app/call_center/root.php
+END
+call_center_tier_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/3695/trunk/fusionpbx/app/call_center/call_center_tier_edit.php
+END
+cmd.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/3695/trunk/fusionpbx/app/call_center/cmd.php
+END
+call_center_queue_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/3801/trunk/fusionpbx/app/call_center/call_center_queue_edit.php
+END
+app_config.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/4010/trunk/fusionpbx/app/call_center/app_config.php
+END
+call_center_agent_delete.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/3695/trunk/fusionpbx/app/call_center/call_center_agent_delete.php
+END
+call_center_agents.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/3695/trunk/fusionpbx/app/call_center/call_center_agents.php
+END
+call_center_agent_status.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/3889/trunk/fusionpbx/app/call_center/call_center_agent_status.php
+END
+call_center_agent_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/3695/trunk/fusionpbx/app/call_center/call_center_agent_edit.php
+END
+call_center_tier_delete.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/3695/trunk/fusionpbx/app/call_center/call_center_tier_delete.php
+END
+call_center_tiers.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/3695/trunk/fusionpbx/app/call_center/call_center_tiers.php
+END
+call_center_queue_delete.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/3695/trunk/fusionpbx/app/call_center/call_center_queue_delete.php
+END

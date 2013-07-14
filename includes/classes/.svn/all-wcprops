@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/4147/trunk/fusionpbx/includes/classes
+END
+switch_fax.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/2151/trunk/fusionpbx/includes/classes/switch_fax.php
+END
+schema.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/3976/trunk/fusionpbx/includes/classes/schema.php
+END
+root.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/2225/trunk/fusionpbx/includes/classes/root.php
+END
+menu.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/4147/trunk/fusionpbx/includes/classes/menu.php
+END
+database.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/4107/trunk/fusionpbx/includes/classes/database.php
+END
+switch_directory.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/3695/trunk/fusionpbx/includes/classes/switch_directory.php
+END
+switch_dialplan.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/4055/trunk/fusionpbx/includes/classes/switch_dialplan.php
+END
+install.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/3695/trunk/fusionpbx/includes/classes/install.php
+END
+switch_modules.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/3695/trunk/fusionpbx/includes/classes/switch_modules.php
+END
+array_order.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/2043/trunk/fusionpbx/includes/classes/array_order.php
+END
+domains.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/3976/trunk/fusionpbx/includes/classes/domains.php
+END

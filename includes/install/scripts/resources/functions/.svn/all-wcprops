@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/3976/trunk/fusionpbx/includes/install/scripts/resources/functions
+END
+base64.lua
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/3695/trunk/fusionpbx/includes/install/scripts/resources/functions/base64.lua
+END
+config.lua
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/3976/trunk/fusionpbx/includes/install/scripts/resources/functions/config.lua
+END
+mkdir.lua
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/3976/trunk/fusionpbx/includes/install/scripts/resources/functions/mkdir.lua
+END
+format_seconds.lua
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/3695/trunk/fusionpbx/includes/install/scripts/resources/functions/format_seconds.lua
+END
+trim.lua
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/3976/trunk/fusionpbx/includes/install/scripts/resources/functions/trim.lua
+END
+file_exists.lua
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/3695/trunk/fusionpbx/includes/install/scripts/resources/functions/file_exists.lua
+END
+database_handle.lua
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/3976/trunk/fusionpbx/includes/install/scripts/resources/functions/database_handle.lua
+END
+explode.lua
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/3695/trunk/fusionpbx/includes/install/scripts/resources/functions/explode.lua
+END

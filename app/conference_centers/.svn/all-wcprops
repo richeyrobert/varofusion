@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/4054/trunk/fusionpbx/app/conference_centers
+END
+conference_session_details.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/3976/trunk/fusionpbx/app/conference_centers/conference_session_details.php
+END
+root.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/3695/trunk/fusionpbx/app/conference_centers/root.php
+END
+conference_room_delete.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/3695/trunk/fusionpbx/app/conference_centers/conference_room_delete.php
+END
+app_config.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/4016/trunk/fusionpbx/app/conference_centers/app_config.php
+END
+app_languages.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/3976/trunk/fusionpbx/app/conference_centers/app_languages.php
+END
+conference_rooms.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/3976/trunk/fusionpbx/app/conference_centers/conference_rooms.php
+END
+conference_room_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/4054/trunk/fusionpbx/app/conference_centers/conference_room_edit.php
+END
+conference_center_delete.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/3695/trunk/fusionpbx/app/conference_centers/conference_center_delete.php
+END
+conference_centers.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/3976/trunk/fusionpbx/app/conference_centers/conference_centers.php
+END
+conference_center_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/3976/trunk/fusionpbx/app/conference_centers/conference_center_edit.php
+END
+conference_sessions.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/3976/trunk/fusionpbx/app/conference_centers/conference_sessions.php
+END

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/3695/trunk/fusionpbx/core/upgrade
+END
+upgrade_domains.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/3695/trunk/fusionpbx/core/upgrade/upgrade_domains.php
+END
+root.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/2225/trunk/fusionpbx/core/upgrade/root.php
+END
+app_config.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/3695/trunk/fusionpbx/core/upgrade/app_config.php
+END
+upgrade_schema.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/2240/trunk/fusionpbx/core/upgrade/upgrade_schema.php
+END
+upgrade.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/3695/trunk/fusionpbx/core/upgrade/upgrade.php
+END
+app_defaults.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/2758/trunk/fusionpbx/core/upgrade/app_defaults.php
+END

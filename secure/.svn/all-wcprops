@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/3695/trunk/fusionpbx/secure
+END
+root.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/2225/trunk/fusionpbx/secure/root.php
+END
+.htaccess
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/2043/trunk/fusionpbx/secure/.htaccess
+END
+htaccess.tmp
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/2043/trunk/fusionpbx/secure/htaccess.tmp
+END
+index.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/1892/trunk/fusionpbx/secure/index.php
+END
+fax_to_email.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/3695/trunk/fusionpbx/secure/fax_to_email.php
+END
+v_mailto.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/3695/trunk/fusionpbx/secure/v_mailto.php
+END

@@ -1,0 +1,161 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/3798/trunk/fusionpbx/app/provision_editor
+END
+filedelete.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/2136/trunk/fusionpbx/app/provision_editor/filedelete.php
+END
+clipoptions.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/2136/trunk/fusionpbx/app/provision_editor/clipoptions.php
+END
+config.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/2282/trunk/fusionpbx/app/provision_editor/config.php
+END
+app_config.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/3695/trunk/fusionpbx/app/provision_editor/app_config.php
+END
+filerename.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/2136/trunk/fusionpbx/app/provision_editor/filerename.php
+END
+index.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/2157/trunk/fusionpbx/app/provision_editor/index.php
+END
+clipdelete.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/2136/trunk/fusionpbx/app/provision_editor/clipdelete.php
+END
+fileread.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/2880/trunk/fusionpbx/app/provision_editor/fileread.php
+END
+list.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/2220/trunk/fusionpbx/app/provision_editor/list.php
+END
+filelist.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/2157/trunk/fusionpbx/app/provision_editor/filelist.php
+END
+clipsearch.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/2220/trunk/fusionpbx/app/provision_editor/clipsearch.php
+END
+root.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/2225/trunk/fusionpbx/app/provision_editor/root.php
+END
+cliplist.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/2220/trunk/fusionpbx/app/provision_editor/cliplist.php
+END
+readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/2136/trunk/fusionpbx/app/provision_editor/readme.txt
+END
+foldernew.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/2136/trunk/fusionpbx/app/provision_editor/foldernew.php
+END
+clip.db
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/2136/trunk/fusionpbx/app/provision_editor/clip.db
+END
+fileoptionslist.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/3798/trunk/fusionpbx/app/provision_editor/fileoptionslist.php
+END
+header.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/2136/trunk/fusionpbx/app/provision_editor/header.php
+END
+filenew.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/2136/trunk/fusionpbx/app/provision_editor/filenew.php
+END
+clipupdate.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/2220/trunk/fusionpbx/app/provision_editor/clipupdate.php
+END
+fileoptions.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/2136/trunk/fusionpbx/app/provision_editor/fileoptions.php
+END
+folderdelete.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/2136/trunk/fusionpbx/app/provision_editor/folderdelete.php
+END
+filesave.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/2136/trunk/fusionpbx/app/provision_editor/filesave.php
+END
+footer.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/2136/trunk/fusionpbx/app/provision_editor/footer.php
+END
+clipoptionslist.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/2220/trunk/fusionpbx/app/provision_editor/clipoptionslist.php
+END
+clipadd.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/2136/trunk/fusionpbx/app/provision_editor/clipadd.php
+END

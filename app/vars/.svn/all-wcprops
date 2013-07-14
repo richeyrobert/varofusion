@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/3976/trunk/fusionpbx/app/vars
+END
+app_defaults.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/3976/trunk/fusionpbx/app/vars/app_defaults.php
+END
+vars_textarea.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/3695/trunk/fusionpbx/app/vars/vars_textarea.php
+END
+var_delete.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/3695/trunk/fusionpbx/app/vars/var_delete.php
+END
+vars.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/3695/trunk/fusionpbx/app/vars/vars.php
+END
+var_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/3695/trunk/fusionpbx/app/vars/var_edit.php
+END
+root.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/2225/trunk/fusionpbx/app/vars/root.php
+END
+app_config.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/3695/trunk/fusionpbx/app/vars/app_config.php
+END

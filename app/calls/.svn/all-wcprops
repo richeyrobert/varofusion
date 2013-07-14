@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/4013/trunk/fusionpbx/app/calls
+END
+root.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/2225/trunk/fusionpbx/app/calls/root.php
+END
+app_config.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/4013/trunk/fusionpbx/app/calls/app_config.php
+END
+app_languages.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/3976/trunk/fusionpbx/app/calls/app_languages.php
+END
+calls.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/3695/trunk/fusionpbx/app/calls/calls.php
+END
+call_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/3976/trunk/fusionpbx/app/calls/call_edit.php
+END

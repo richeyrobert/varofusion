@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/4056/trunk/fusionpbx/app/xml_cdr
+END
+app_defaults.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/2758/trunk/fusionpbx/app/xml_cdr/app_defaults.php
+END
+v_xml_cdr_import.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/4056/trunk/fusionpbx/app/xml_cdr/v_xml_cdr_import.php
+END
+xml_cdr.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/3976/trunk/fusionpbx/app/xml_cdr/xml_cdr.php
+END
+xml_cdr_statistics_inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/3678/trunk/fusionpbx/app/xml_cdr/xml_cdr_statistics_inc.php
+END
+xml_cdr_details.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/4056/trunk/fusionpbx/app/xml_cdr/xml_cdr_details.php
+END
+xml_cdr_statistics_csv.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/2361/trunk/fusionpbx/app/xml_cdr/xml_cdr_statistics_csv.php
+END
+xml_cdr_search.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/2676/trunk/fusionpbx/app/xml_cdr/xml_cdr_search.php
+END
+xml_cdr_inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/3976/trunk/fusionpbx/app/xml_cdr/xml_cdr_inc.php
+END
+xml_cdr_statistics.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/3695/trunk/fusionpbx/app/xml_cdr/xml_cdr_statistics.php
+END
+xml_cdr_csv.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/2676/trunk/fusionpbx/app/xml_cdr/xml_cdr_csv.php
+END
+root.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/2225/trunk/fusionpbx/app/xml_cdr/root.php
+END
+xml_cdr_import_update.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/3695/trunk/fusionpbx/app/xml_cdr/xml_cdr_import_update.php
+END
+app_config.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/3976/trunk/fusionpbx/app/xml_cdr/app_config.php
+END
+app_languages.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/3695/trunk/fusionpbx/app/xml_cdr/app_languages.php
+END

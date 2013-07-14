@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/2535/trunk/fusionpbx/includes/templates/provision/cisco/spa504g
+END
+{v_mac}.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/2535/trunk/fusionpbx/includes/templates/provision/cisco/spa504g/%7Bv_mac%7D.xml
+END

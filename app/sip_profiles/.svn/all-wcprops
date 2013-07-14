@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/3976/trunk/fusionpbx/app/sip_profiles
+END
+root.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/2461/trunk/fusionpbx/app/sip_profiles/root.php
+END
+sip_profiles_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/3695/trunk/fusionpbx/app/sip_profiles/sip_profiles_edit.php
+END
+app_config.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/3695/trunk/fusionpbx/app/sip_profiles/app_config.php
+END
+sip_profile_copy.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/2597/trunk/fusionpbx/app/sip_profiles/sip_profile_copy.php
+END
+app_defaults.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/2758/trunk/fusionpbx/app/sip_profiles/app_defaults.php
+END
+sip_profile_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/2464/trunk/fusionpbx/app/sip_profiles/sip_profile_settings.php
+END
+sip_profile_settings_delete.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/2461/trunk/fusionpbx/app/sip_profiles/sip_profile_settings_delete.php
+END
+sip_profiles.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/2464/trunk/fusionpbx/app/sip_profiles/sip_profiles.php
+END
+sip_profile_settings_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/2461/trunk/fusionpbx/app/sip_profiles/sip_profile_settings_edit.php
+END
+sip_profiles_delete.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/3695/trunk/fusionpbx/app/sip_profiles/sip_profiles_delete.php
+END

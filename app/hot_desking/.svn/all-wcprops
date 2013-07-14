@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/4036/trunk/fusionpbx/app/hot_desking
+END
+root.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/2760/trunk/fusionpbx/app/hot_desking/root.php
+END
+app_config.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/4036/trunk/fusionpbx/app/hot_desking/app_config.php
+END
+index.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/2760/trunk/fusionpbx/app/hot_desking/index.php
+END
+extension_delete.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/3695/trunk/fusionpbx/app/hot_desking/extension_delete.php
+END
+extension_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/3695/trunk/fusionpbx/app/hot_desking/extension_edit.php
+END

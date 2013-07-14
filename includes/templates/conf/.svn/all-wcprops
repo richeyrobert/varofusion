@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/4166/trunk/fusionpbx/includes/templates/conf
+END
+voicemail.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/voicemail.tpl
+END
+tetris.ttml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/tetris.ttml
+END
+mime.types
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/mime.types
+END
+vars.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/3976/trunk/fusionpbx/includes/templates/conf/vars.xml
+END
+freetdm.conf
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/2758/trunk/fusionpbx/includes/templates/conf/freetdm.conf
+END
+web-vm.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/web-vm.tpl
+END
+fur_elise.ttml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/fur_elise.ttml
+END
+notify-voicemail.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/notify-voicemail.tpl
+END
+freeswitch.xml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/freeswitch.xml
+END
+extensions.conf
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/1856/trunk/fusionpbx/includes/templates/conf/extensions.conf
+END

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/2758/trunk/fusionpbx/app/dialplan_features/resources/xml/dialplan
+END
+350_please_hold.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/2758/trunk/fusionpbx/app/dialplan_features/resources/xml/dialplan/350_please_hold.xml
+END
+360_is_zrtp_secure.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/2758/trunk/fusionpbx/app/dialplan_features/resources/xml/dialplan/360_is_zrtp_secure.xml
+END
+320_xfer_vm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/2758/trunk/fusionpbx/app/dialplan_features/resources/xml/dialplan/320_xfer_vm.xml
+END
+370_is_secure.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/2758/trunk/fusionpbx/app/dialplan_features/resources/xml/dialplan/370_is_secure.xml
+END
+300_dx.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/2758/trunk/fusionpbx/app/dialplan_features/resources/xml/dialplan/300_dx.xml
+END
+340_cf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/2758/trunk/fusionpbx/app/dialplan_features/resources/xml/dialplan/340_cf.xml
+END
+310_att_xfer.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/2758/trunk/fusionpbx/app/dialplan_features/resources/xml/dialplan/310_att_xfer.xml
+END
+330_is_transfer.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/2758/trunk/fusionpbx/app/dialplan_features/resources/xml/dialplan/330_is_transfer.xml
+END

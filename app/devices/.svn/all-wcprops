@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/4092/trunk/fusionpbx/app/devices
+END
+device_delete.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/3976/trunk/fusionpbx/app/devices/device_delete.php
+END
+devices.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/3976/trunk/fusionpbx/app/devices/devices.php
+END
+root.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/3976/trunk/fusionpbx/app/devices/root.php
+END
+device_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/4092/trunk/fusionpbx/app/devices/device_edit.php
+END
+app_config.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/4022/trunk/fusionpbx/app/devices/app_config.php
+END

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/4057/trunk/fusionpbx/core/domain_settings
+END
+domains.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/3695/trunk/fusionpbx/core/domain_settings/domains.php
+END
+domain_settings_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/3695/trunk/fusionpbx/core/domain_settings/domain_settings_edit.php
+END
+domains_delete.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/3695/trunk/fusionpbx/core/domain_settings/domains_delete.php
+END
+domains_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/4057/trunk/fusionpbx/core/domain_settings/domains_edit.php
+END
+root.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/3695/trunk/fusionpbx/core/domain_settings/root.php
+END
+app_config.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/3695/trunk/fusionpbx/core/domain_settings/app_config.php
+END
+domain_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/3695/trunk/fusionpbx/core/domain_settings/domain_settings.php
+END
+app_defaults.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/3695/trunk/fusionpbx/core/domain_settings/app_defaults.php
+END
+domain_settings_delete.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/3695/trunk/fusionpbx/core/domain_settings/domain_settings_delete.php
+END

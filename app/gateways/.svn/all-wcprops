@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/4034/trunk/fusionpbx/app/gateways
+END
+gateway_copy.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/3976/trunk/fusionpbx/app/gateways/gateway_copy.php
+END
+root.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/2225/trunk/fusionpbx/app/gateways/root.php
+END
+gateway_delete.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/3695/trunk/fusionpbx/app/gateways/gateway_delete.php
+END
+gateways.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/3695/trunk/fusionpbx/app/gateways/gateways.php
+END
+app_config.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/4034/trunk/fusionpbx/app/gateways/app_config.php
+END
+gateway_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/3976/trunk/fusionpbx/app/gateways/gateway_edit.php
+END
+app_languages.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/3976/trunk/fusionpbx/app/gateways/app_languages.php
+END

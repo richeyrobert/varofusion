@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/4030/trunk/fusionpbx/app/fax
+END
+app_config.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/4030/trunk/fusionpbx/app/fax/app_config.php
+END
+app_languages.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/3695/trunk/fusionpbx/app/fax/app_languages.php
+END
+fax_copy.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/3695/trunk/fusionpbx/app/fax/fax_copy.php
+END
+fax_view.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/3695/trunk/fusionpbx/app/fax/fax_view.php
+END
+fax.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/3976/trunk/fusionpbx/app/fax/fax.php
+END
+fax_delete.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/3695/trunk/fusionpbx/app/fax/fax_delete.php
+END
+fax_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/3976/trunk/fusionpbx/app/fax/fax_edit.php
+END
+root.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/2225/trunk/fusionpbx/app/fax/root.php
+END

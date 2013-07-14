@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/3695/trunk/fusionpbx/resources/phpmailer
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/3695/trunk/fusionpbx/resources/phpmailer/LICENSE
+END
+changelog.txt
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/3695/trunk/fusionpbx/resources/phpmailer/changelog.txt
+END
+docs.ini
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/3695/trunk/fusionpbx/resources/phpmailer/docs.ini
+END
+class.pop3.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/3695/trunk/fusionpbx/resources/phpmailer/class.pop3.php
+END
+class.phpmailer.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/3695/trunk/fusionpbx/resources/phpmailer/class.phpmailer.php
+END
+class.smtp.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/3695/trunk/fusionpbx/resources/phpmailer/class.smtp.php
+END

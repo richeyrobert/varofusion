@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/4009/trunk/fusionpbx/app/call_broadcast
+END
+call_broadcast_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/3695/trunk/fusionpbx/app/call_broadcast/call_broadcast_edit.php
+END
+root.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/2225/trunk/fusionpbx/app/call_broadcast/root.php
+END
+app_config.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/4009/trunk/fusionpbx/app/call_broadcast/app_config.php
+END
+app_languages.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/3695/trunk/fusionpbx/app/call_broadcast/app_languages.php
+END
+call_broadcast_send.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/3999/trunk/fusionpbx/app/call_broadcast/call_broadcast_send.php
+END
+call_broadcast.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/3695/trunk/fusionpbx/app/call_broadcast/call_broadcast.php
+END
+call_broadcast_delete.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/3695/trunk/fusionpbx/app/call_broadcast/call_broadcast_delete.php
+END

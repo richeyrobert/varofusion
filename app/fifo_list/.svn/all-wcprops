@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/4032/trunk/fusionpbx/app/fifo_list
+END
+fifo_interactive_inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/3695/trunk/fusionpbx/app/fifo_list/fifo_interactive_inc.php
+END
+fifo_list.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/3695/trunk/fusionpbx/app/fifo_list/fifo_list.php
+END
+fifo_interactive.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/3695/trunk/fusionpbx/app/fifo_list/fifo_interactive.php
+END
+root.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/2225/trunk/fusionpbx/app/fifo_list/root.php
+END
+app_config.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/4032/trunk/fusionpbx/app/fifo_list/app_config.php
+END
+fifo_exec.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/3695/trunk/fusionpbx/app/fifo_list/fifo_exec.php
+END
+fifo_list_inc.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/3695/trunk/fusionpbx/app/fifo_list/fifo_list_inc.php
+END
